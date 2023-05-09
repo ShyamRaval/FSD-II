@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <p onclick="call()" id="demo">Hello</p>
+
+        <script>
+
+            function call(){
+                obj = {
+                    name:"MyTree",
+                    age:18,
+                    DOB:"2003-07-23"
+                };
+                obj.DOB=new Date(obj.DOB);
+                document.getElementById("demo").innerHTML = "Birth day of " + obj.name + " is "+obj.DOB;
+            };
+
+        </script>
+    </body>
+</html>

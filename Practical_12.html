@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const person=[{
+                    "name":"moksha",
+                    "age":19,
+                },
+                {
+                    name:"zeel",
+                    age:20
+                },
+                {
+                    name:'vipul',
+                    age:17
+                }
+            ];
+
+            for(x=0;x<person.length;x++){
+                var t=0;
+                for(y=0;y<person.length;y++){
+                    if(person[x].age>person[y].age){
+                        t++;
+                    }
+                    if(t=person.length -1){
+                        var t1;
+                        t1=person[x];
+                        console.log(t1);
+                    }
+                }
+            }
+            
+        </script>
+    </body>
+</html>
