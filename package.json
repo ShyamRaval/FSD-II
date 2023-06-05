@@ -1,7 +1,20 @@
 {
   "dependencies": {
     "chalk": "^5.2.0",
+    "express": "^4.18.2",
     "nodemon": "^2.0.22",
     "validator": "^13.9.0"
-  }
+  },
+  "name": "fsd-ii",
+  "version": "1.0.0",
+  "description": "H3H3",
+  "main": "Practical_14.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lol"
+  ],
+  "author": "Shyam Raval",
+  "license": "ISC"
 }
