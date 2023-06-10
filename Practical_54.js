@@ -9,7 +9,7 @@ student = {
 
 app.get("/", (req, res) => {
     res.set("content-type", "text/html")
-    res.write(JSON.stringify(student))
+    res.write(JSON.stringify(student.age))
     res.send()
 })
 
