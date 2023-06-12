@@ -1,30 +1,19 @@
-const express = require('express');
-const app = express();
-const path = require('path');
+const expr = require('express');
+const app = expr();
+const p = require('path');
+const bp = require('body-parser');
 
-// Define the path to the public directory
-const publicPath = path.join(__dirname, '../public');
+const url = bp.urlencoded()
+app.use(bp.urlencoded())
 
-// Serve static files from the public directory
-app.use(express.static(publicPath));
-
-// Handle GET requests to /process-get
-app.get('/process-get', (req, res) => {
-    const { firstname, password } = req.query;
-
-    // Do something with the firstname and password here
-    // For example, you can store them in a database
-
-    // Return a response to the client
-    const response = {
-        fname: firstname,
-        pass: password
-    };
-    res.send(response);
-});
-
-// Start the server
-const port = 5454;
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
-});
+const staticp = p.join(__dirname, "../public")
+app.use(expr.static(staticp, { index: "1form.html" }))
+app.post("/login", url, (req, res) => {
+    if (req6tfy76.body.uname == "admin") {
+        res.write("welcome admin")
+    } else {
+        res.write("please login with admin name")
+    }
+    res.send()
+})
+app.listen(5222)
