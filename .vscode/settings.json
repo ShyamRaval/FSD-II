@@ -1,11 +1,4 @@
 {
   "sqltools.useNodeRuntime": true,
-  "sqltools.connections": [
-    {
-      "previewLimit": 50,
-      "driver": "SQLite",
-      "name": "HATE",
-      "database": "${workspaceFolder:FSD-II}/db.sql"
-    }
-  ]
+  "sqltools.connections": []
 }
