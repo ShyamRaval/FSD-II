@@ -1,8 +1,12 @@
-import Randomactivity from "./Randomactivity";
+import React from 'react';
+import NumberOperations from './NumberOperations';
 
 function App() {
   return (
-    <Randomactivity />
+    <div>
+      <h1>Number Operations</h1>
+      <NumberOperations />
+    </div>
   );
 }
 
